@@ -9,12 +9,21 @@
 <body>
   <div class="container">
     <h1>🤖 AI Fact Checker</h1>
+    
     <div class="chatbox" id="chatbox">
-      <div class="message ai">AI Checker: Ask me anything and I’ll tell you if it's true or false!</div>
+      <div class="message ai">
+        AI Checker: Ask me anything and I’ll tell you if it's true or false!
+      </div>
     </div>
-    <input type="text" id="claimInput" placeholder="Enter a claim like 'There are 26 alphabets'" />
-    <button onclick="handleUserInput()">Check Fact</button>
+    
+    <div class="input-area">
+      <input type="text" id="factInput" placeholder="E.g., There are 26 letters in the alphabet" />
+      <button id="checkBtn">Check Fact</button>
+    </div>
+
+    <div id="result"></div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
